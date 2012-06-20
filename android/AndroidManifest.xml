@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.codebionic.android.nutridb"
+      android:versionCode="1"
+      android:versionName="0.1">
+    <uses-sdk android:minSdkVersion="7" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <application android:label="@string/app_name" 
+                 android:theme="@style/BigTextTheme">
+
+    <!-- ================================================================== -->
+        <activity android:name="NutriDB"
+                  android:label="@string/app_name"
+                  android:launchMode="singleTop">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <!-- Configures the search dialog widget gui  -->
+            <meta-data android:name="android.app.searchable"
+                       android:resource="@xml/searchable" />
+
+        </activity>
+    <!-- ================================================================== -->
+        <activity android:name="NutriInstaller"
+                  android:label="@string/app_name">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+    <!-- ================================================================== -->
+        <activity android:name="FoodDes"
+                  android:label="@string/app_name">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+    <!-- ================================================================== -->
+        <activity android:name="FoodNutData"
+                  android:label="@string/app_name">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+    <!-- ================================================================== -->
+        <activity android:name="FoodNutConfirmDate"
+                  android:label="@string/app_name">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+    <!-- ================================================================== -->
+        <activity android:name="NutriError"
+                  android:label="@string/app_name">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+    <!-- ================================================================== -->
+        <provider
+            android:name="com.codebionic.android.nutridb.NutriProvider"
+            android:authorities="com.codebionic.android.nutridb.NutriProvider"
+        />
+    </application>
+</manifest> 

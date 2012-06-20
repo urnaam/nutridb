@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NutriDB</string>
+    <string name="app_label">nutridb</string>
+    <string name="search_hint">Search NutriDB</string>
+    <string name="main_calendar">Date</string>
+    <string name="foodnutdatahead_desc_label">Average quantity per</string>
+    <string name="foodnutdatahead_unit_label">g</string>
+    <string name="foodnutdata_weight_spinner_prompt">Spinner</string>
+    <string name="nutsumhead_desc_label">Total for </string>
+    <string name="foodnutconfirmdate_today">Add to Today</string>
+    <string name="foodnutconfirmdate_pick">Pick another day</string>
+    <string name="error_ok">OK</string>
+    <string name="error_unknown">Unknown error</string>
+    <string name="error_no_result">No result - try another search term</string>
+
+</resources>

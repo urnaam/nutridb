@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BigTextTheme" parent="android:Theme">
+        <item name="android:textAppearance">@style/BigText</item>
+        <item name="android:textAppearanceSmall">@style/BigText</item>
+        <item name="android:buttonStyle">@style/BigTextButton</item>
+    </style>
+</resources>

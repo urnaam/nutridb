@@ -1,0 +1,11 @@
+*.swp
+*.bak
+*.png
+*.db
+*.zip
+android/build.xml
+android/proguard.cfg
+android/local.properties
+android/bin
+android/gen
+
