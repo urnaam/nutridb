@@ -36,13 +36,14 @@ Build from source
 
 2. Update the project to reflect your local properties.
 
-    pushd ./nutridb/android/
-    android update project -p ~/tmp/nutridb/android/
+    android update project -n NutriDB -p ./nutridb/android/
 
 3. Build the debug APK and install on your phone or emulator.
 
+    pushd ./nutridb/android/
+
     ant debug
-    db -s emulator-5554  install -r ./bin/NutriDB-debug.apk
+    adb -s emulator-5554  install -r ./bin/NutriDB-debug.apk
 
 4. Download the SR24 database.
 
@@ -59,7 +60,7 @@ Build from source
 
     ./sr24.sh
 
-  This will take a long time - 30 min or so on my laptop.
+  This will take a long time - 30 min. or so on my laptop.
 
 6. Use ADB to install the DB on the SD-card of your phone or emulator.
 
@@ -67,6 +68,8 @@ Build from source
     DB=main.1.com.codebionic.android.nutridb.obb
 
     adb push ./sr24.v1.db $DBDIR/$DB
+
+   You only need to build and install the DB once.
 
 
 
